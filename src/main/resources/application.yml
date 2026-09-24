@@ -1,0 +1,26 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          #github:
+          google:
+            clientId: XXXXXX16652-lk5v1fuq4sngr76ops7r2gipdj77icmsXXXXX.apps.googleusercontent.com
+            clientSecret: XXXXXXX-r3mSWqau7TK5eV7KI3Tx2fplvRmI
+             #authorization-grant-type: authorization_code
+             #scope:
+                #- profile
+                #- email               
+               
+        provider:
+          #github:
+          google: 
+            #Authorization API           
+            authorization-uri: https://accounts.google.com/o/oauth2/auth
+            #Token API
+            token-uri: https://oauth2.googleapis.com/token
+            #User-profile api
+            user-info-uri: https://www.googleapis.com/oauth2/v3/userinfo          
+
+server:
+  port: 8080
